@@ -51,7 +51,7 @@ header {
     .row-one-left,
     .row-two-right {
         img {
-            height: auto;
+            height: 267px;
             width: 400px;
             border-radius: 10px;
             display: flex;
