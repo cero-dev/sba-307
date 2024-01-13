@@ -3,15 +3,17 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: aquamarine;
+    background-color: white;
     gap: 70px;
+    justify-content: space-between;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgb(37, 25, 139);
+    height: 78px;
 
     ul {
         list-style-type: none;
@@ -25,9 +27,11 @@ header {
         }
 
         li {
+            color: white;
+
             a {
                 text-decoration: none;
-                color: black;
+                color: rgb(255, 255, 255);
                 font-size: 20px;
             }
         }
@@ -46,7 +50,15 @@ header {
     justify-content: center;
     align-items: center;
     gap: 90px;
-    background-color: red;
+    width: 80%;
+    padding: 20px 0px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+
+    margin: auto;
 
     .row-one-left,
     .row-two-right {
@@ -67,4 +79,49 @@ header {
             margin: 0;
         }
     }
+}
+
+.row-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.75);
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    border-radius: 5px;
+
+    .row-three-left {
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .row-three-right {
+        button {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(37, 25, 139);
+    color: white;
 }
