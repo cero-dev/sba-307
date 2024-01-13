@@ -3,8 +3,8 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    gap: 50px;
     background-color: aquamarine;
+    gap: 70px;
 }
 
 header {
@@ -17,6 +17,7 @@ header {
         list-style-type: none;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 20px;
 
         #logo {
@@ -33,14 +34,22 @@ header {
     }
 }
 
-.row-one {
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.row-one,
+.row-two {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 90px;
     background-color: red;
 
-    .row-one-left {
+    .row-one-left,
+    .row-two-right {
         img {
             height: auto;
             width: 400px;
@@ -49,7 +58,8 @@ header {
         }
     }
 
-    .row-one-right {
+    .row-one-right,
+    .row-two-left {
         max-width: 400px;
 
         h2,
